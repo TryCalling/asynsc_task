@@ -18,7 +18,7 @@
             android:id="@+id/image_view"
             android:layout_width="150dp"
             android:layout_height="150dp"
-            android:src="@drawable/shape"
+            android:src="@drawable/img"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -44,7 +44,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:hint="Enter fullname"
-            android:background="@drawable/input_style"
+            android:background="@drawable/input_rounded"
             android:paddingStart="@dimen/margin_medium"
             android:paddingEnd="@dimen/margin_medium"
             app:layout_constraintTop_toBottomOf="@id/text1"
@@ -58,7 +58,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:hint="Enter username"
-            android:background="@drawable/input_style"
+            android:background="@drawable/input_rounded"
             android:paddingStart="@dimen/margin_medium"
             android:paddingEnd="@dimen/margin_medium"
             app:layout_constraintTop_toBottomOf="@id/ed1"
@@ -73,7 +73,7 @@
             android:layout_height="wrap_content"
             android:hint="Enter password"
             android:inputType="textPassword"
-            android:background="@drawable/input_style"
+            android:background="@drawable/input_rounded"
             android:drawableEnd="@drawable/ic_baseline_visibility_24"
             android:paddingStart="@dimen/margin_medium"
             android:paddingEnd="@dimen/margin_medium"
@@ -96,33 +96,35 @@
             app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginTop="@dimen/margin_large" />
 
-        <!-- Already Registered? Link -->
+        <!-- Register Link -->
         <LinearLayout
-            android:id="@+id/lin1"
+            android:id="@+id/lin2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             app:layout_constraintTop_toBottomOf="@id/btnrgs"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginTop="@dimen/margin_medium">
+            android:layout_marginTop="16dp">
 
             <TextView
-                android:id="@+id/txt3"
+                android:id="@+id/txt1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Already Registered? "
-                android:textSize="@dimen/text_size_medium" />
+                android:textSize="14sp"
+                android:textColor="@color/black" />
 
             <TextView
-                android:id="@+id/login_link"
+                android:id="@+id/loginLink"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Click here"
+                android:text=" Click here"
                 android:textStyle="bold"
-                android:textColor="@color/teal_200"
-                android:textSize="@dimen/text_size_medium"
-                android:layout_marginStart="@dimen/margin_small" />
+                android:textColor="@color/teal_700"
+                android:textSize="14sp"
+                android:layout_marginStart="4dp" />
+
         </LinearLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
