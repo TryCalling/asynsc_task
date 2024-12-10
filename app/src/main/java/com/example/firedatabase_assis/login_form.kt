@@ -20,6 +20,7 @@ class login_form : AppCompatActivity() {
         // Set status bar color programmatically
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             window.statusBarColor = resources.getColor(R.color.teal_700, theme)
+            window.navigationBarColor = resources.getColor(R.color.teal_700, theme) // Bottom bar color
         }
 
         // Database setup

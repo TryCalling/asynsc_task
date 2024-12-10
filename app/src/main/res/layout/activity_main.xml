@@ -90,7 +90,7 @@
             android:text="Register"
             android:textSize="@dimen/text_size_medium"
             android:textStyle="bold"
-            android:backgroundTint="@color/teal_200"
+            android:backgroundTint="@color/teal_700"
             app:layout_constraintTop_toBottomOf="@id/ed3"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

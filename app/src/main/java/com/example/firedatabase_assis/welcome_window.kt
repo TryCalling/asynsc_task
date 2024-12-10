@@ -17,6 +17,7 @@ class welcome_window : AppCompatActivity() {
         // Change status bar color
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             window.statusBarColor = resources.getColor(R.color.teal_700)
+            window.navigationBarColor = resources.getColor(R.color.teal_700, theme) // Bottom bar color
         }
 
         // Receive data and set it to the text view
